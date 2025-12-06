@@ -4,8 +4,10 @@ import pandas as pd
 from huggingface_hub import HfApi
 import os
 
+DATASET_PATH = "hf://datasets/RahulSingh211/tourism_dataset/tourism.csv"
+
 # Load dataset from Hugging Face
-dataset = load_dataset("RahulSingh211/tourism_dataset", split="train")
+dataset = pd.read_csv(DATASET_PATH)
 df = dataset.to_pandas()
 
 # Data Cleaning

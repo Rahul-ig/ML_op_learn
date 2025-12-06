@@ -8,12 +8,11 @@ import os
 # Page configuration
 st.set_page_config(
     page_title="Tourism Package Predictor",
-    page_icon="✈️",
     layout="wide"
 )
 
 # Title and description
-st.title("✈️ Tourism Package Purchase Predictor")
+st.title("Tourism Package Purchase Predictor")
 st.markdown("""
 This application predicts whether a customer will purchase the **Wellness Tourism Package** 
 based on their profile and interaction data.
